@@ -1,0 +1,12 @@
+<xml>
+  <output_jar>client.jar</output_jar>
+  <source_folder>client</source_folder>
+  <manifest>client_Manifest.txt</manifest>
+  
+  <class name="Main" />
+  
+  <classpath>
+    <jar>libraries/json-simple/json-simple-1.1.1.jar</jar>
+    <jar>libraries/jeromq/jeromq-0.3.4.jar</jar>
+  </classpath>
+</xml>

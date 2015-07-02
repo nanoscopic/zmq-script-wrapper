@@ -1,0 +1,23 @@
+<xml>
+  <output_jar>manager.jar</output_jar>
+  <source_folder>manager</source_folder>
+  <manifest>manager_Manifest.txt</manifest>
+  
+  <class name="Main">
+    <!--<use class="SystemDTools" />-->
+    <use class="mTask" />
+    <innerclass name="MySignalHandler">
+      <innerclass name=""/>
+    </innerclass>
+    <innerclass name="StreamGobbler" />
+  </class>
+  
+  <class name="mTask">
+  </class>
+  
+  <classpath>
+    <jar>libraries/json-simple/json-simple-1.1.1.jar</jar>
+    <jar>libraries/jeromq/jeromq-0.3.4.jar</jar>
+    <jar>../jni_systemd/SystemDTools.jar</jar>
+  </classpath>
+</xml>

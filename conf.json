@@ -1,0 +1,4 @@
+{
+  "looping_cmd": "java -jar /opt/some_path/java_app/output.jar jsonloop -config /opt/some_path/java_app/config.json",
+  "min_servers": 3
+}

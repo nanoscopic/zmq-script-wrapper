@@ -1,0 +1,17 @@
+[Unit]
+Description=Java BIRT Reporting
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/java -Djava.library.path=/opt/bfms_trunk/birt_reporting/jni_systemd -jar /opt/bfms_trunk/birt_reporting/zmq_script_wrapper/manager.jar /opt/bfms_trunk/birt_reporting/zmq_script_wrapper/conf.json
+ExecStop=/usr/bin/java -jar /opt/bfms_trunk/birt_reporting/zmq_script_wrapper/client.jar /opt/bfms_trunk/birt_reporting/zmq_script_wrapper/conf.json shutdown
+WorkingDirectory=/opt/bfms_trunk/birt_reporting/zmq_script_wrapper
+StandardInput=null
+StandardOutput=null
+StandardError=journal+console
+User=apache
+Group=apache
+
+[Install]
+WantedBy=multi-user.target
+

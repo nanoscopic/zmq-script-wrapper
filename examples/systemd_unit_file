@@ -1,0 +1,12 @@
+[Unit]
+Description=ZMQ Wrapped Script
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/java -Djava.library.path=/somepath/jni_systemd -jar /somepath/zmq_script_wrapper/manager.jar /etc/someconfig.json
+WorkingDirectory=/somepath/zmq_script_wrapper
+StandardInput=null
+StandardOutput=null
+StandardError=journal+console
+User=someuser
+Group=someuser

@@ -1,0 +1,16 @@
+client.jar
+server.jar
+manager.jar
+client_Makefile
+server_Makefile
+manager_Makefile
+com
+client/Main.class
+server/Main.class
+server/ProcessWatcher.class
+manager/Main.class
+manager/MySignalHandler.class
+manager/StreamGobbler.class
+client_Manifest.txt
+manager_Manifest.txt
+server_Manifest.txt

@@ -1,0 +1,8 @@
+#!/usr/bin/bash
+echo "Starting server"
+
+f2() {
+  java -jar server.jar conf.json
+  echo "Server finished"
+}
+f2 &
